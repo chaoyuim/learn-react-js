@@ -5,6 +5,7 @@ const Forms = (props) => {
             <button>Submit</button>
         </form>);
 }
+
 class App extends React.Component {
     state = {
         name: 'Yu',
