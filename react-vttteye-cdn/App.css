@@ -62,3 +62,6 @@ body{
     border-left:1px solid grey;
     overflow: auto;
   }
+  .ph-item{
+    margin-bottom: 5px !important;
+  }

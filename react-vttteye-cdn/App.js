@@ -12,7 +12,66 @@ class Slider_Tanks extends React.Component {
         return (
             <React.Fragment>
                 <h3>Tank</h3>
-                <div>test</div>
+                <div className="ph-item">
+                    <div className="ph-col-12">
+                        <div className="ph-picture"></div>
+                        <div className="ph-row">
+                            <div className="ph-col-6 big"></div>
+                            <div className="ph-col-4 empty big"></div>
+                            <div className="ph-col-2 big"></div>
+                            <div className="ph-col-4"></div>
+                            <div className="ph-col-8 empty"></div>
+                            <div className="ph-col-6"></div>
+                            <div className="ph-col-6 empty"></div>
+                            <div className="ph-col-12"></div>
+                        </div>
+                    </div>
+                </div>
+                <div className="ph-item">
+                    <div className="ph-col-12">
+                        <div className="ph-picture"></div>
+                        <div className="ph-row">
+                            <div className="ph-col-6 big"></div>
+                            <div className="ph-col-4 empty big"></div>
+                            <div className="ph-col-2 big"></div>
+                            <div className="ph-col-4"></div>
+                            <div className="ph-col-8 empty"></div>
+                            <div className="ph-col-6"></div>
+                            <div className="ph-col-6 empty"></div>
+                            <div className="ph-col-12"></div>
+                        </div>
+                    </div>
+                </div>
+                <div className="ph-item">
+                    <div className="ph-col-12">
+                        <div className="ph-picture"></div>
+                        <div className="ph-row">
+                            <div className="ph-col-6 big"></div>
+                            <div className="ph-col-4 empty big"></div>
+                            <div className="ph-col-2 big"></div>
+                            <div className="ph-col-4"></div>
+                            <div className="ph-col-8 empty"></div>
+                            <div className="ph-col-6"></div>
+                            <div className="ph-col-6 empty"></div>
+                            <div className="ph-col-12"></div>
+                        </div>
+                    </div>
+                </div>
+                <div className="ph-item">
+                    <div className="ph-col-12">
+                        <div className="ph-picture"></div>
+                        <div className="ph-row">
+                            <div className="ph-col-6 big"></div>
+                            <div className="ph-col-4 empty big"></div>
+                            <div className="ph-col-2 big"></div>
+                            <div className="ph-col-4"></div>
+                            <div className="ph-col-8 empty"></div>
+                            <div className="ph-col-6"></div>
+                            <div className="ph-col-6 empty"></div>
+                            <div className="ph-col-12"></div>
+                        </div>
+                    </div>
+                </div>
             </React.Fragment>
         );
     }
@@ -20,6 +79,7 @@ class Slider_Tanks extends React.Component {
 class Slider_Orders extends React.Component {
     state = {
         orders: [],
+        hash_value: null,
         loading: true,
     }
     componentDidMount() {
@@ -27,7 +87,8 @@ class Slider_Orders extends React.Component {
         const result = apex.server.process("init_Orders");
         result.done((data) => {
             this.setState({
-                orders: data,
+                orders: data.data,
+                hash_value: data.hash_key,
                 loading: false
             })
             console.log(CryptoJS.MD5(this.state.orders).toString())
