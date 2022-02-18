@@ -1,0 +1,77 @@
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#wwvFlowForm {
+    display: none !important;
+}
+
+#App {
+    height: 100%;
+    width: 100%;
+}
+
+.navbar {
+    background-color: white;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+}
+
+/* Style the links inside the navigation bar */
+.navbar a {
+    /* float: left; */
+    /* display: block; */
+    color: grey;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-top: 3px solid white;
+}
+
+.navbar a>i {
+    font-size: 24px;
+}
+
+.navbar a>div {
+    font-size: 6px;
+}
+
+/* Change the color of links on hover */
+/* .navbar a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+     */
+/* Add a color to the active/current link */
+.navbar a.active {
+    /* background-color: black; */
+    color: black;
+    border-top: 3px solid black;
+    /* border-top-left-radius: 3px; */
+    /* border-top-right-radius: 3px; */
+}
+
+.h3-header {
+    z-index: 1;
+    margin: 0;
+    padding: 20px;
+    background-color: #3434b7;
+    color: wheat;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+}
+
+.content-wrapper {
+    height: calc(100vh - 75px);
+    overflow-y: auto;
+}
+
+.items-wrapper {
+    margin-top: 70px;
+}

@@ -1,0 +1,89 @@
+body{
+  height: 100%;
+  width: 100%;
+}
+#wwvFlowForm{
+  display: none !important;
+}
+#App{
+  height: 100%;
+  width: 100%;
+}
+
+.navbar {
+    background-color: white;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+  
+  /* Style the links inside the navigation bar */
+  .navbar a {
+    /* float: left; */
+    /* display: block; */
+    color: grey;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-top:3px solid white ;
+  }
+  .navbar a>i{
+    font-size: 24px;
+  }
+  .navbar a>div{
+    font-size: 6px;
+  }
+  
+  /* Change the color of links on hover */
+  /* .navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+   */
+  /* Add a color to the active/current link */
+  .navbar a.active {
+    /* background-color: black; */
+    color: black;
+    border-top:3px solid black ;
+    /* border-top-left-radius: 3px; */
+    /* border-top-right-radius: 3px; */
+  }
+  
+  .for_slick_slider{
+    height: calc(100vh - 66px);
+  }
+  .slick_slider_items{
+    text-align: center;
+    height: calc(100vh - 66px);
+    padding:0px 10px 0px 10px;
+    border-left:1px solid grey;
+    overflow: auto;
+  }
+  .ph-item{
+    margin-bottom: 5px !important;
+  }
+  .btn {
+    margin-left: 10px !important;
+  }
+  .cl_modal_dialog{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    padding: 30px 15px 15px;
+    margin: 0px !important;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    /* display: none; */
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background-color: white;
+    height: 85vh !important;
+    width: 100% !important;
+    -webkit-transition: opacity 0.3s ease-out, bottom 0.3s ease-out;
+    -moz-transition: opacity 0.3s ease-out, bottom 0.3s ease-out;
+    -o-transition: opacity 0.3s ease-out, bottom 0.3s ease-out;
+    transition: opacity 0.3s ease-out, bottom 0.3s ease-out;
+    background-color: #ccc;
+  }
